@@ -1,0 +1,234 @@
+/* .complaint-form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 2rem 1.2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(233,175,86,0.09);
+}
+
+.complaint-form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.35rem;
+  color: #db8819;
+}
+.complaint-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.complaint-form-container select,
+.complaint-form-container input,
+.complaint-form-container textarea {
+  padding: 10px;
+  margin-bottom: 13px;
+  border: 1px solid #f3d0a5;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.complaint-form-container input:focus,
+.complaint-form-container textarea:focus,
+.complaint-form-container select:focus {
+  border-color: #db8819;
+  outline: none;
+}
+
+.complaint-form-container button {
+  padding: 11px;
+  background-color: #db8819;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 10px;
+}
+.complaint-form-container button:hover {
+  background-color: #b0630c;
+}
+
+.complaint-form-container .error {
+  color: #b02d2d;
+  background: #fbecec;
+  border-radius: 4px;
+  padding: 6px 0;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 14px;
+} */
+
+
+
+
+.complaint-bg {
+  min-height: 100vh;
+  background: url("../assets//bg-image.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.complaint-header {
+  width: 100%;
+  background: #2755bb;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px 0 12px 0;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 10px rgba(39,85,187,0.11);
+}
+
+.complaint-form-card {
+  max-width: 410px;
+  margin: 40px auto 0 auto;
+  border-radius: 10px;
+  padding: 26px 26px 24px 26px;
+  background: rgba(255,255,255,0.94);
+  box-shadow: 0 6px 18px rgba(80,90,185,0.12);
+  display: flex;
+  flex-direction: column;
+}
+.complaint-form-card h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #2755bb;
+  letter-spacing: 1px;
+}
+.complaint-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.complaint-form-card label {
+  margin-bottom: 4px;
+  color: #194c9b;
+  font-weight: 500;
+}
+.complaint-form-card select, .complaint-form-card input, .complaint-form-card textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c1d9f6;
+  font-size: 15px;
+}
+.complaint-form-card select:focus, .complaint-form-card input:focus, .complaint-form-card textarea:focus {
+  border-color: #2755bb;
+  outline: none;
+}
+.location-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 6px;
+}
+.location-btn {
+  background: #267ad7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 13px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-right: 5px;
+  transition: background 0.2s;
+}
+.location-btn:hover {
+  background: #1e9149;
+}
+.location-captured {
+  font-size: 0.98rem;
+  color: #21a11b;
+  margin-left: 8px;
+  font-weight: 500;
+}
+.image-upload-row {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.or-text {
+  color: #666;
+  font-size: 0.99rem;
+  margin: 0 4px;
+}
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.96rem;
+  cursor: pointer;
+}
+.upload-btn {
+  background: #197a2c;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.97rem;
+  transition: background 0.18s;
+  cursor: pointer;
+}
+.upload-btn:hover {
+  background: #13541d;
+}
+.file-uploaded {
+  color: #313a9f;
+  font-size: 0.97rem;
+  margin-left: 7px;
+}
+
+.error {
+  color: #c32f2f;
+  background: #faebeb;
+  border-radius: 4px;
+  padding: 7px 0;
+  margin: 8px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.submit-btn {
+  margin-top: 16px;
+  padding: 11px 0;
+  background: #2755bb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.06rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submit-btn:hover {
+  background: #1e9149;
+}
+.back-btn {
+  margin-top: 10px;
+  padding: 9px 0;
+  background: #b6cafd;
+  color: #2755bb;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.01rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #d6e7ff;
+}
+
+.success-msg {
+  color: #1e9149;
+  background: #e8f7ec;
+  border-radius: 4px;
+  padding: 7px 0;
+  margin: 8px 0;
+  text-align: center;
+  font-size: 14px;
+}

@@ -1,0 +1,221 @@
+.complaints-bg {
+  min-height: 100vh;
+  background: url("../assets/bg-image.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.complaints-header {
+  width: 100%;
+  background-color: #2755bb;
+  color: #fff;
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  box-shadow: 0 3px 10px rgba(39,85,187,0.11);
+}
+
+.complaints-card {
+  max-width: 850px;
+  margin: 50px auto 0 auto;
+  padding: 32px 24px 24px 24px;
+  background: rgba(255,255,255,0.94);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(50,90,185,0.13);
+}
+
+.complaints-card h2 {
+  margin-bottom: 26px;
+  font-size: 1.45rem;
+  color: #141d4d;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .5px;
+  border-bottom: 1px solid #e5eefd;
+  padding-bottom: 12px;
+}
+
+.complaints-table-container {
+  overflow-x: auto;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 26px;
+}
+
+.complaints-table th,
+.complaints-table td {
+  padding: 13px 11px;
+  border: 1px solid #e1eaf7;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.complaints-table th {
+  background-color: #eafbe9;
+  color: #2755bb;
+  font-weight: 600;
+}
+
+.complaints-table tr:nth-child(even) {
+  background-color: #f8fefa;
+}
+.complaints-table tr:hover {
+  background-color: #eef6fa;
+  transition: background 0.2s;
+}
+
+/* .complaint-img-preview {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(39,85,187,0.13);
+} */
+
+
+.complaint-img-preview {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(39,85,187,0.15);
+  border: 2px solid #e2ebfa;
+  transition: transform 0.13s, box-shadow 0.13s;
+  background: #fff;
+}
+.complaint-img-preview:hover {
+  transform: scale(1.12);
+  box-shadow: 0 3px 12px rgba(30,90,180,0.16);
+  border-color: #48b864;
+}
+
+
+.status-pending {
+  color: #fd9800;
+  font-weight: bold;
+}
+.status-solved {
+  color: #48b864;
+  font-weight: bold;
+}
+.unknown {
+  color: #b5b8bf;
+  font-size: 14px;
+}
+
+.action-btn {
+  padding: 8px 18px;
+  background-color: #2755bb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+.action-btn:hover {
+  background-color: #1e9149;
+}
+
+.file-uploaded-label {
+  color: #313a9f;
+  font-size: 15px;
+  background: #e1eaf7;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.no-complaints {
+  color: #888;
+  font-size: 17px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.back-btn {
+  display: block;
+  margin: 34px auto 0 auto;
+  padding: 11px 38px;
+  background-color: #2755bb;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s;
+  box-shadow: 0 4px 10px rgba(39,85,187,0.10);
+}
+.back-btn:hover {
+  background-color: #1e9149;
+}
+
+
+.complaints-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  justify-content: flex-end;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #cbd5f5;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.action-btn-group {
+  display: flex;
+  gap: 8px; /* space between Make Public and Delete */
+}
+
+
+.status-fake {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e63946;   /* red */
+  color: #ffffff;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: lowercase;
+  line-height: 1;              /* keeps pill tight */
+  white-space: nowrap;         /* keeps on one line */
+}
+
+
+.action-btn-fake {
+  background-color: #e63946;     /* red */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-btn-fake:hover {
+  background-color: #c71c30;     /* darker red on hover */
+}
